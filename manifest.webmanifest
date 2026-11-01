@@ -1,0 +1,19 @@
+{
+  "name": "Daiippo Nihongo — Belajar Bahasa Jepang N5",
+  "short_name": "Daiippo",
+  "description": "Belajar bahasa Jepang dasar setara JLPT N5: kana, kosakata, kanji, tata bahasa, ulasan berjarak, latihan menulis dan menyimak, serta simulasi tes.",
+  "lang": "id",
+  "id": "./",
+  "start_url": "./#beranda",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FBFBFA",
+  "theme_color": "#FBFBFA",
+  "categories": ["education"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
