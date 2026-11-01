@@ -1,6 +1,6 @@
 // Daiippo Nihongo — service worker: aplikasi tetap bisa dibuka tanpa internet.
 // Naikkan angka VERSI setiap kali index.html diperbarui agar pengguna mendapat versi baru.
-const VERSI='daiippo-v2';
+const VERSI='daiippo-v4';
 const INTI=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-512.png','./apple-touch-icon.png','./favicon-48.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(VERSI).then(c=>c.addAll(INTI)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==VERSI).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
